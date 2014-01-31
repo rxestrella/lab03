@@ -33,7 +33,7 @@ std::string View::drawMenu()
 	}	
 	std::cout << "Select a menu option:\n";
 
-	int choice = 1;
+        int choice = 1;
 	  do {
 		if(std::cin.fail() || choice <= 0 || choice > 4)
 		{
@@ -44,5 +44,5 @@ std::string View::drawMenu()
 		std::cin >> choice;
 	} while(choice <= 0 || choice > 4);
 
-	return options[choice - 1];
+	return options[-1];
 }
